@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+    <style>
+        
+        #main-content {
+          height: 100%;
+          width: 100%;
+          margin: 3rem;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          color: #4c4e61;
+        }
+        #main-content #header-1 {
+          font-size: 28px;
+          font-weight: 200;
+        }
+        #main-content #header-2 {
+          font-size: 28px;
+          font-weight: 600;
+          padding: 15px 0 20px;
+        }
+        #main-content #body {
+          text-align: center;
+          font-size: 14px;
+          line-height: 1.4rem;
+          color: rgba(76, 78, 97, 0.5);
+          width: 30rem;
+          padding-bottom: 40px;
+        }
+        .card-img{font-size: 39px;color: #dec617;}
+        .card-img-silver{font-size: 39px;color: #b4b4b4;}
+        .card-img-brown{font-size: 39px;color: #523a2a;}
+
+        #main-content #card-body {
+          display: flex;
+          align-items: center;
+        }
+        #main-content #card-body #card-1 {
+          border-top: 3px solid #c2a70e;
+        }
+        #main-content #card-body #card-1:hover {
+          background: linear-gradient(to bottom,#FFD700, transparent);
+          transform: scale(1.05);
+          box-shadow: 0px 15px 15px 16px rgba(0, 0, 0, 0.1);
+        }
+        #main-content #card-body #card-2 {
+          border-top: 3px solid rgb(129, 129, 129);
+        }
+        #main-content #card-body #card-2:hover {
+          background: linear-gradient(to bottom, rgb(223, 223, 223) 5%, transparent 90%);
+          transform: scale(1.05);
+          box-shadow: 0px 15px 15px 16px rgba(0, 0, 0, 0.1);
+        }
+        #main-content #card-body #card-3 {
+          border-top: 3px solid #80604D;
+        }
+        #main-content #card-body #card-3:hover {
+          background: linear-gradient(to bottom, #695546, transparent 85%);
+          transform: scale(1.05);
+          box-shadow: 0px 15px 15px 16px rgba(0, 0, 0, 0.1);
+        }
+       
+        #main-content #card-body .card {
+          background: white;
+          margin: 1rem 0.8rem;
+          padding: 1.8rem;
+          width: 14rem;
+          border-radius: 4px;
+          box-shadow: 0px 9px 20px 1px rgba(0, 0, 0, 0.1);
+          transition: 0.5s all;
+        }
+        #main-content #card-body .card .card-title {
+          font-weight: 600;    
+          font-size: 30px;
+          margin-bottom: 15px;
+          color: #000;
+        }
+        #main-content #card-body .card .card-body {
+          font-size: 49px;
+          /* line-height: 1.2rem; */
+          color: #000000;
+        }
+        #main-content #card-body .card #card-cont {
+          display: flex;
+          justify-content: flex-end;
+        }
+        #main-content #card-body .card #card-cont .card-img {
+          padding-top: 20px;
+          width: 25%;
+        }
+        
+        @media only screen and (max-width: 675px) {
+          #main-content #card-body {
+            display: inline-block;
+          }
+        }
+        @media only screen and (max-width: 375px) {
+          #main-content #header-2 {
+            text-align: center;
+            width: 22rem;
+          }
+          #main-content #body {
+            width: 18rem;
+          }
+          #main-content #card-body {
+            display: inline;
+          }
+        }</style>
+</head>
+<body>
+    
+<div id="main-content">
+    
+    <div id="card-body">
+      <div id="first-item">
+        <div class="card" id="card-1">
+          <div class="card-title">Golden card</div>
+          <div class="card-body">120</div>
+          <div id="card-cont"><i class="fas fa-medal card-img"></i></div>
+        </div>
+      </div>
+
+      <div id="second-item">
+        <div class="card" id="card-2">
+          <div class="card-title">Silver card</div>
+          <div class="card-body">400</div>
+          <div id="card-cont"><i class="fas fa-medal card-img-silver"></i></div>
+        </div>
+      </div>
+
+      <div id="three-item">
+      <div class="card" id="card-3">
+        <div class="card-title">brown card</div>
+        <div class="card-body">900</div>
+        <div id="card-cont"><i class="fas fa-medal card-img-brown"></i></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
